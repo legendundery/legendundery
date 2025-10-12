@@ -53,8 +53,8 @@ this is a **蒟蒻**
 
 [![Starred Repos](https://github-readme-stats.vercel.app/api/pin/?username=legendundery&repo=legendundery&theme=tokyonight)](https://github.com/legendundery?tab=stars)
 
-*(You can use tools like [GitHub Starred Repos Showcase](https://github.com/abhisheknaiidu/awesome-github-profile-readme#️-dynamic-repo-cards)  
-to dynamically display your top starred repositories.)*
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=legendundery&repo=my-favorite-repo&theme=tokyonight)](https://github.com/legendundery/my-favorite-repo)
+
 
 ---
 
