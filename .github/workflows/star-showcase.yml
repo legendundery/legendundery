@@ -59,28 +59,20 @@ jobs:
           echo "EOF" >> $GITHUB_ENV
 
       - name: Update README
-        # 使用 awk 替换 和 之间的内容
-        # 注意：我们不再使用 'cat star.md'，而是使用 shell 变量
-        # 这里需要转义 $ 符号，确保 $STAR_SHOWCASE_CONTENT 被正确替换
+        # 将环境变量内容作为 awk 的外部变量 (Content) 传入
+        # 这种方式比使用临时文件更简洁，且避免了 Shell 解释问题
+        env:
+          # 将我们在前一步生成的内容作为 env 变量传递给 run 块
+          STAR_CONTENT: ${{ env.STAR_SHOWCASE_CONTENT }}
         run: |
           # Awk 命令的逻辑：
           # 1. 遇到 START 标记，打印它。
-          # 2. 插入存储在环境变量中的新内容。
+          # 2. 打印 awk 外部变量 Content 的值。
           # 3. 开启跳过模式 (skip=1)。
           # 4. 遇到 END 标记，关闭跳过模式 (skip=0)，并打印 END 标记。
           # 5. 如果 skip=0，则打印行。
           
-          # 将环境变量内容写入一个临时文件，方便 awk 读取，避免复杂的转义问题
-          echo -e "${{ env.STAR_SHOWCASE_CONTENT }}" > star_content_tmp.md
-
-          awk '
-            BEGIN {
-                # 读取临时文件内容到 Awk 变量 (Content)
-                while ((getline < "star_content_tmp.md") > 0) {
-                    Content = Content $0 "\n"
-                }
-                close("star_content_tmp.md")
-            }
+          awk -v Content="${STAR_CONTENT}" '
             // { 
                 print; 
                 printf "%s", Content; # 打印新内容
