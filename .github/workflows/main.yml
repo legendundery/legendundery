@@ -29,7 +29,7 @@ jobs:
       - name: Update README
         run: |
           awk '
-            /<!-- STAR_SHOWCASE_START -->/ { print; print "```markdown"; system("cat star.md"); print "```"; skip=1; next }
+            /<!-- STAR_SHOWCASE_START -->/ { print; system("cat star.md"); skip=1; next }
             /<!-- STAR_SHOWCASE_END -->/ { skip=0 }
             skip==0 { print }
           ' README.md > tmp && mv tmp README.md
