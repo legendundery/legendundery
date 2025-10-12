@@ -27,29 +27,33 @@ jobs:
           # 2. 添加外部容器的起始 HTML
           STAR_SHOWCASE_CONTENT="${STAR_SHOWCASE_CONTENT}<div align=\"center\" style=\"display:flex; flex-wrap:wrap; justify-content:center;\">\n"
 
-          # 3. 使用 curl 和 jq 生成 Star 卡片 HTML
-          # 注意：将 curl 的输出赋给一个变量，而不是直接管道。
+          # 3. 抓取数据
           STARRED_REPOS=$(curl -s -H "Authorization: token $GH_TOKEN" "https://api.github.com/users/legendundery/starred?per_page=6")
           
-          # 使用 jq 生成您原来的 HTML 结构
-          CARD_HTML=$(echo "$STARRED_REPOS" | \
-            jq -r '.[] | "\
-            <div style=\"width:280px; margin:10px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left;\">\
-                <a href=\"" + .html_url + "\" target=\"_blank\" style=\"text-decoration:none; color:#0969da;\">\
-                    <h3>" + .full_name + "</h3>\
-                </a>\
-                <p style=\"color:#555; font-size:13px;\">" + (.description // "No description") + "</p>\
-                <p style=\"font-size:12px; color:#888;\">⭐ " + (.stargazers_count|tostring) + "</p>\
-            </div>"'
-          )
+          # 4. 定义 jq 脚本：使用单引号多行字符串来定义模板，减少转义问题
+          # 注意：这里的单引号是 jq 的字符串，内层的双引号是 HTML 属性。
+          JQ_SCRIPT='
+            .[] | "
+            <div style=\"width:280px; margin:10px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left;\">
+                <a href=\"\(.html_url)\" target=\"_blank\" style=\"text-decoration:none; color:#0969da;\">
+                    <h3>\(.full_name)</h3>
+                </a>
+                <p style=\"color:#555; font-size:13px;\">\(.description // "No description")</p>
+                <p style=\"font-size:12px; color:#888;\">⭐ \(.stargazers_count)</p>
+            </div>"
+          '
           
-          # 4. 将生成的卡片 HTML 添加到内容中
+          # 5. 执行 jq 并将结果添加到内容变量
+          # 使用 'echo' 和 'jq -r' 将模板和数据结合
+          CARD_HTML=$(echo "$STARRED_REPOS" | jq -r "$JQ_SCRIPT")
+          
+          # 6. 将生成的卡片 HTML 添加到内容中
           STAR_SHOWCASE_CONTENT="${STAR_SHOWCASE_CONTENT}${CARD_HTML}\n"
 
-          # 5. 添加外部容器的结束 HTML
+          # 7. 添加外部容器的结束 HTML
           STAR_SHOWCASE_CONTENT="${STAR_SHOWCASE_CONTENT}</div>"
 
-          # 6. 将最终内容输出为 GitHub Actions 环境变量，供下一步使用
+          # 8. 将最终内容输出为 GitHub Actions 环境变量
           echo "STAR_SHOWCASE_CONTENT<<EOF" >> $GITHUB_ENV
           echo "$STAR_SHOWCASE_CONTENT" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
