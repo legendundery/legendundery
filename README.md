@@ -53,8 +53,6 @@ this is a **蒟蒻**
 
 [![Starred Repos](https://github-readme-stats.vercel.app/api/pin/?username=legendundery&repo=legendundery&theme=tokyonight)](https://github.com/legendundery?tab=stars)
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=legendundery&repo=my-favorite-repo&theme=tokyonight)](https://github.com/legendundery/my-favorite-repo)
-
 <!-- STAR_SHOWCASE_START -->
 1
 <!-- STAR_SHOWCASE_END -->
