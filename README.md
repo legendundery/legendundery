@@ -21,8 +21,8 @@
 
 ### ⚙️ Tech Stack
 
-`Python` • `JavaScript` • `TypeScript` • `C++` • `Rust`  
-`React` • `Node.js` • `TailwindCSS` • `Vite` • `OpenAI API`
+`Python` • `JavaScript` • `TypeScript` • `C/C++`
+`Vue` • `Node.js` • `TailwindCSS` • `Vite` • `OpenAI API` • `sora2(???)`
 
 ---
 
