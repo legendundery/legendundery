@@ -47,10 +47,10 @@
 
 > _Things I love or find inspiring._
 
-[![Starred Repos](https://github-readme-stats.vercel.app/api/pin/?username=legendundery&repo=legendundery&theme=tokyonight)](https://github.com/legendundery?tab=stars)
+<!-- STAR_SHOWCASE_START -->
+Loading awesome repos...
+<!-- STAR_SHOWCASE_END -->
 
-*(You can use tools like [GitHub Starred Repos Showcase](https://github.com/abhisheknaiidu/awesome-github-profile-readme#️-dynamic-repo-cards)  
-to dynamically display your top starred repositories.)*
 
 ---
 
