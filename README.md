@@ -56,10 +56,7 @@ this is a **蒟蒻**
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=legendundery&repo=my-favorite-repo&theme=tokyonight)](https://github.com/legendundery/my-favorite-repo)
 
 <!-- STAR_SHOWCASE_START -->
-```markdown
-## 🌟 Star Showcase
-
-```
+1
 <!-- STAR_SHOWCASE_END -->
 
 
