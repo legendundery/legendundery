@@ -48,7 +48,6 @@
 > _Things I love or find inspiring._
 
 <!-- STAR_SHOWCASE_START -->
-```markdown
 ## 🌟 Star Showcase
 
 - [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install): 😼 优雅地使用基于 clash/mihomo 的代理环境 ⭐ 4841
@@ -57,7 +56,6 @@
 - [YDX-2147483647/bulletin-issues-transferred](https://github.com/YDX-2147483647/bulletin-issues-transferred): 汇总 BIT 各种网站的通知。（以及钉钉、RSS插件等） ⭐ 32
 - [QQBackup/ntdb-plaintext-extracter](https://github.com/QQBackup/ntdb-plaintext-extracter): 提取QQ NT数据库 group_msg_table 中的纯文本 ⭐ 8
 - [QQBackup/QQDecrypt](https://github.com/QQBackup/QQDecrypt): 解密并导出 PCQQ / QQ NT 等软件的聊天记录数据库的教程网站 ⭐ 121
-```
 <!-- STAR_SHOWCASE_END -->
 
 
