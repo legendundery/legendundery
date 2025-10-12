@@ -1,0 +1,43 @@
+name: 🌟 Update Star Showcase
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Fetch starred repos and generate Markdown
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "## 🌟 Star Showcase" > star.md
+          echo "" >> star.md
+          curl -s -H "Authorization: token $GH_TOKEN" "https://api.github.com/users/legendundery/starred?per_page=6" | \
+          jq -r '.[] | "- [\(.full_name)](\(.html_url)): \(.description // "No description") ⭐ \(.stargazers_count)"' >> star.md
+
+      - name: Update README
+        run: |
+          awk '
+            /<!-- STAR_SHOWCASE_START -->/ { print; print "```markdown"; system("cat star.md"); print "```"; skip=1; next }
+            /<!-- STAR_SHOWCASE_END -->/ { skip=0 }
+            skip==0 { print }
+          ' README.md > tmp && mv tmp README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "✨ Auto-update Star Showcase" || echo "No changes to commit"
+          git push
