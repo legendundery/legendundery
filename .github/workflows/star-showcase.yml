@@ -1,8 +1,8 @@
 name: 🌟 Update Star Showcase
 on:
   schedule:
-    - cron: '0 6 * * *'   # 每天早上 6 点自动执行
-  workflow_dispatch:      # 可手动触发
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   update-stars:
@@ -25,7 +25,11 @@ jobs:
 
       - name: Update README
         run: |
-          sed -i '/<!-- STAR_SHOWCASE_START -->/,/<!-- STAR_SHOWCASE_END -->/c\<!-- STAR_SHOWCASE_START -->\n'"$(cat star.md)"'\n<!-- STAR_SHOWCASE_END -->' README.md
+          awk '
+            /<!-- STAR_SHOWCASE_START -->/ { print; print "```markdown"; system("cat star.md"); print "```"; skip=1; next }
+            /<!-- STAR_SHOWCASE_END -->/ { skip=0 }
+            skip==0 { print }
+          ' README.md > tmp && mv tmp README.md
 
       - name: Commit and push changes
         run: |
