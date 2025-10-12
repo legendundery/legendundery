@@ -56,14 +56,10 @@ this is a **蒟蒻**
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=legendundery&repo=my-favorite-repo&theme=tokyonight)](https://github.com/legendundery/my-favorite-repo)
 
 <!-- STAR_SHOWCASE_START -->
+```markdown
 ## 🌟 Star Showcase
 
-<div align="center" style="margin:10px; display:inline-block; width:300px; vertical-align:top; border:1px solid #e1e4e8; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); padding:10px; background:#fdfdfd;"><a href="https://github.com/nelvko/clash-for-linux-install" target="_blank" style="text-decoration:none; color:inherit;"><h3 style="margin:5px 0;">nelvko/clash-for-linux-install</h3><p style="font-size:13px; color:#555;">😼 优雅地使用基于 clash/mihomo 的代理环境</p><p style="font-size:12px; color:#888;">⭐ 4840</p></a></div>
-<div align="center" style="margin:10px; display:inline-block; width:300px; vertical-align:top; border:1px solid #e1e4e8; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); padding:10px; background:#fdfdfd;"><a href="https://github.com/yht0511/Terminus" target="_blank" style="text-decoration:none; color:inherit;"><h3 style="margin:5px 0;">yht0511/Terminus</h3><p style="font-size:13px; color:#555;">小学期游戏</p><p style="font-size:12px; color:#888;">⭐ 1</p></a></div>
-<div align="center" style="margin:10px; display:inline-block; width:300px; vertical-align:top; border:1px solid #e1e4e8; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); padding:10px; background:#fdfdfd;"><a href="https://github.com/RyahoSolomon/BIT-basic_training_of_web_applications_developing_project" target="_blank" style="text-decoration:none; color:inherit;"><h3 style="margin:5px 0;">RyahoSolomon/BIT-basic_training_of_web_applications_developing_project</h3><p style="font-size:13px; color:#555;">[BIT/Beijing Institute of Technology/北京理工大学]互联网应用开发基础训练(实践周)结课项目by关东组2024</p><p style="font-size:12px; color:#888;">⭐ 3</p></a></div>
-<div align="center" style="margin:10px; display:inline-block; width:300px; vertical-align:top; border:1px solid #e1e4e8; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); padding:10px; background:#fdfdfd;"><a href="https://github.com/YDX-2147483647/bulletin-issues-transferred" target="_blank" style="text-decoration:none; color:inherit;"><h3 style="margin:5px 0;">YDX-2147483647/bulletin-issues-transferred</h3><p style="font-size:13px; color:#555;">汇总 BIT 各种网站的通知。（以及钉钉、RSS插件等）</p><p style="font-size:12px; color:#888;">⭐ 32</p></a></div>
-<div align="center" style="margin:10px; display:inline-block; width:300px; vertical-align:top; border:1px solid #e1e4e8; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); padding:10px; background:#fdfdfd;"><a href="https://github.com/QQBackup/ntdb-plaintext-extracter" target="_blank" style="text-decoration:none; color:inherit;"><h3 style="margin:5px 0;">QQBackup/ntdb-plaintext-extracter</h3><p style="font-size:13px; color:#555;">提取QQ NT数据库 group_msg_table 中的纯文本</p><p style="font-size:12px; color:#888;">⭐ 8</p></a></div>
-<div align="center" style="margin:10px; display:inline-block; width:300px; vertical-align:top; border:1px solid #e1e4e8; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.05); padding:10px; background:#fdfdfd;"><a href="https://github.com/QQBackup/QQDecrypt" target="_blank" style="text-decoration:none; color:inherit;"><h3 style="margin:5px 0;">QQBackup/QQDecrypt</h3><p style="font-size:13px; color:#555;">解密并导出 PCQQ / QQ NT 等软件的聊天记录数据库的教程网站</p><p style="font-size:12px; color:#888;">⭐ 121</p></a></div>
+```
 <!-- STAR_SHOWCASE_END -->
 
 
@@ -110,3 +106,5 @@ this is a **蒟蒻**
   <strong>💬 Thanks for visiting! Come back soon — I might’ve broken something new 😆</strong>
 </p>
 
+<div align="center" style="display:flex; flex-wrap:wrap; justify-content:center;">
+</div>
