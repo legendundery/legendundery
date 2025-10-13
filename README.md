@@ -50,7 +50,7 @@
 <!-- STAR_SHOWCASE_START -->
 ## 🌟 Star Showcase
 
-- [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install): 😼 优雅地使用基于 clash/mihomo 的代理环境 ⭐ 4841
+- [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install): 😼 优雅地使用基于 clash/mihomo 的代理环境 ⭐ 4859
 - [yht0511/Terminus](https://github.com/yht0511/Terminus): 小学期游戏 ⭐ 1
 - [RyahoSolomon/BIT-basic_training_of_web_applications_developing_project](https://github.com/RyahoSolomon/BIT-basic_training_of_web_applications_developing_project): [BIT/Beijing Institute of Technology/北京理工大学]互联网应用开发基础训练(实践周)结课项目by关东组2024 ⭐ 3
 - [YDX-2147483647/bulletin-issues-transferred](https://github.com/YDX-2147483647/bulletin-issues-transferred): 汇总 BIT 各种网站的通知。（以及钉钉、RSS插件等） ⭐ 32
