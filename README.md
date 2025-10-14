@@ -48,14 +48,23 @@
 > _Things I love or find inspiring._
 
 <!-- STAR_SHOWCASE_START -->
-## 🌟 Star Showcase
+  ## 🌟 Star Showcase
+  
+  <div align="center" style="display:flex; flex-wrap:wrap; justify-content:center;">
+  EOF
+  
+      curl -s -H "Authorization: token $GH_TOKEN" \
+        "https://api.github.com/users/legendundery/starred?per_page=6" | \
+        jq -r '.[] |
+        "<div style=\"width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;\" onmouseover=\"this.style.transform=\'scale(1.03)\'\" onmouseout=\"this.style.transform=\'scale(1.00)\'\">
+          <a href=\"" + .html_url + "\" target=\"_blank\" style=\"text-decoration:none; color:#0969da;\">
+            <h3 style=\"margin-top:0; font-size:16px;\">" + .full_name + "</h3>
+          </a>
+          <p style=\"color:#555; font-size:13px; min-height:40px;\">" + (.description // "No description") + "</p>
+          <p style=\"font-size:12px; color:#888;\">⭐ " + (.stargazers_count|tostring) + "</p>
+        </div>"' >> star.md
 
-- [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install): 😼 优雅地使用基于 clash/mihomo 的代理环境 ⭐ 4859
-- [yht0511/Terminus](https://github.com/yht0511/Terminus): 小学期游戏 ⭐ 1
-- [RyahoSolomon/BIT-basic_training_of_web_applications_developing_project](https://github.com/RyahoSolomon/BIT-basic_training_of_web_applications_developing_project): [BIT/Beijing Institute of Technology/北京理工大学]互联网应用开发基础训练(实践周)结课项目by关东组2024 ⭐ 3
-- [YDX-2147483647/bulletin-issues-transferred](https://github.com/YDX-2147483647/bulletin-issues-transferred): 汇总 BIT 各种网站的通知。（以及钉钉、RSS插件等） ⭐ 32
-- [QQBackup/ntdb-plaintext-extracter](https://github.com/QQBackup/ntdb-plaintext-extracter): 提取QQ NT数据库 group_msg_table 中的纯文本 ⭐ 8
-- [QQBackup/QQDecrypt](https://github.com/QQBackup/QQDecrypt): 解密并导出 PCQQ / QQ NT 等软件的聊天记录数据库的教程网站 ⭐ 121
+echo '</div>' >> star.md
 <!-- STAR_SHOWCASE_END -->
 
 
