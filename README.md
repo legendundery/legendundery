@@ -13,6 +13,7 @@
 ### 🧠 About Me
 > _“If it looks like magic, it’s probably just a stack overflow post.”_
 
+✅ this is a 蒟蒻  
 💡 **Full-stack tinkerer** — exploring AI, creative coding, and weird projects.  
 🛠️ Loves building things that are half genius, half accident.  
 🎨 Balancing between design and development.  
@@ -62,9 +63,10 @@
 
 📰 **Latest Posts**
 <!-- Replace with your blog RSS or manual list -->
-- [My First Blog Post](https://yourblog.example.com/post1)
-- [Thoughts on Creative Coding](https://yourblog.example.com/post2)
-- [Building Tiny Tools That Spark Joy](https://yourblog.example.com/post3)
+- [My cnblogs](https://www.cnblogs.com/legendundery)
+- [My First Blog Post](#)
+- [Thoughts on Creative Coding](#)
+- [Building Tiny Tools That Spark Joy](#)
 
 > _Coming soon: RSS auto-updates via GitHub Actions._
 
@@ -74,11 +76,20 @@
 
 | 🌍 Site | Description |
 |---------|--------------|
-| [🧩 My Personal Site](https://yourwebsite.example.com) | Experiments, art, and random code |
-| [📚 Dev.to](https://dev.to/legendundery) | Technical blogs & snippets |
-| [🪩 Are.na](https://www.are.na/) | Inspiration & visual collections |
-| [🐦 Twitter/X](https://twitter.com/) | Shitposts and occasional insights |
-| [🎧 Spotify](https://open.spotify.com/) | Coding playlist vibes |
+| [My Personal Site](#) | Experiments, art, and random code |
+| [Dev.to](https://dev.to/legendundery) | Technical blogs & snippets |
+
+| 🌍 friends' links | Description |
+|-------------------|--------------|
+
+| ⚙️ interesting tools | Description |
+|----------------------|--------------|
+| [oschina!](https://tool.oschina.net/) | oschina toolbox|
+| [CS Academy](https://csacademy.com/) | coding learning, but what I prefer -> [graph_editor](https://csacademy.com/app/graph_editor) [geometry_widget](https://csacademy.com/app/geometry_widget) [diffing_tool](https://csacademy.com/app/diffing_tool) |
+| [sam Drawer](https://officeyutong.github.io/sam-drawer-wasm/) |
+| [online paste](https://paste.nugine.xyz/) |
+| [星尘幻梦](https://re.xcdream.com/) | ACG theme for windows and android 二次元没救了 |
+
 
 ---
 
