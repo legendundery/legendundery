@@ -49,22 +49,24 @@
 
 <!-- STAR_SHOWCASE_START -->
   ## 🌟 Star Showcase
-  
-  <div align="center" style="display:flex; flex-wrap:wrap; justify-content:center;">
-  EOF
-  
-      curl -s -H "Authorization: token $GH_TOKEN" \
-        "https://api.github.com/users/legendundery/starred?per_page=6" | \
-        jq -r '.[] |
-        "<div style=\"width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;\" onmouseover=\"this.style.transform=\'scale(1.03)\'\" onmouseout=\"this.style.transform=\'scale(1.00)\'\">
-          <a href=\"" + .html_url + "\" target=\"_blank\" style=\"text-decoration:none; color:#0969da;\">
-            <h3 style=\"margin-top:0; font-size:16px;\">" + .full_name + "</h3>
-          </a>
-          <p style=\"color:#555; font-size:13px; min-height:40px;\">" + (.description // "No description") + "</p>
-          <p style=\"font-size:12px; color:#888;\">⭐ " + (.stargazers_count|tostring) + "</p>
-        </div>"' >> star.md
 
-echo '</div>' >> star.md
+  <div align="center" style="display:flex; flex-wrap:wrap; justify-content:center;">
+      EOF
+      
+          # 获取数据并生成卡片
+          curl -s -H "Authorization: token $GH_TOKEN" \
+            "https://api.github.com/users/legendundery/starred?per_page=6" | \
+            jq -r '.[] |
+            "<div style=\"width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;\" onmouseover=\"this.style.transform=\'scale(1.03)\'\" onmouseout=\"this.style.transform=\'scale(1.00)\'\">
+              <a href=\"" + .html_url + "\" target=\"_blank\" style=\"text-decoration:none; color:#0969da;\">
+                <h3 style=\"margin-top:0; font-size:16px;\">" + .full_name + "</h3>
+              </a>
+              <p style=\"color:#555; font-size:13px; min-height:40px;\">" + (.description // "No description") + "</p>
+              <p style=\"font-size:12px; color:#888;\">⭐ " + (.stargazers_count|tostring) + "</p>
+            </div>"' >> star.md
+      
+          # 文件结尾
+          echo '</div>' >> star.md
 <!-- STAR_SHOWCASE_END -->
 
 
