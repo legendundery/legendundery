@@ -20,6 +20,7 @@ jobs:
       - name: Fetch starred repos and generate card-style Markdown
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        shell: bash
         run: |
           set -e
           # 生成标题
@@ -34,7 +35,6 @@ jobs:
             jq -r '.[] | "[\(.full_name)](\(.html_url))<br><sub>\((.description // "No description") | gsub("\\r|\\n"; " ") | gsub("\\|"; "\\\\|"))</sub><br>⭐ \(.stargazers_count)"' | \
             awk 'BEGIN{print "|  |  |  |"; print "|:--:|:--:|:--:|"} { printf("| %s ", $0); c++; if(c%3==0){print "|"} } END{ if(c%3!=0){ while(c%3!=0){ printf("|  "); c++ } print "|"} }' \
             >> star.md
-                <h3 style='margin-top:0; font-size:16px;'>\" + .full_name + \"</h3>
               </a>
               <p style='color:#555; font-size:13px; min-height:40px;'>\" + (.description // \"No description\") + \"</p>
               <p style='font-size:12px; color:#888;'>⭐ \" + (.stargazers_count|tostring) + \"</p>
