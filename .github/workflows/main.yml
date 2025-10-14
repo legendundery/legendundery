@@ -21,19 +21,19 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          set -e
           # 生成标题
           cat <<'EOF' > star.md
           ## 🌟 Star Showcase
       
           EOF
       
-          # 使用“Markdown 表格卡片”生成（GitHub 会过滤内联 CSS，故不用 style）
+          # 使用“Markdown 表格卡片”
           curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github+json" \
             "https://api.github.com/users/legendundery/starred?per_page=6" | \
             jq -r '.[] | "[\(.full_name)](\(.html_url))<br><sub>\((.description // "No description") | gsub("\\r|\\n"; " ") | gsub("\\|"; "\\\\|"))</sub><br>⭐ \(.stargazers_count)"' | \
             awk 'BEGIN{print "|  |  |  |"; print "|:--:|:--:|:--:|"} { printf("| %s ", $0); c++; if(c%3==0){print "|"} } END{ if(c%3!=0){ while(c%3!=0){ printf("|  "); c++ } print "|"} }' \
             >> star.md
-              <a href='\" + .html_url + \"' target='_blank' style='text-decoration:none; color:#0969da;'>
                 <h3 style='margin-top:0; font-size:16px;'>\" + .full_name + \"</h3>
               </a>
               <p style='color:#555; font-size:13px; min-height:40px;'>\" + (.description // \"No description\") + \"</p>
