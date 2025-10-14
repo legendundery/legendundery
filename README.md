@@ -48,52 +48,11 @@
 > _Things I love or find inspiring._
 
 <!-- STAR_SHOWCASE_START -->
-## 🌟 Star Showcase
 
-<div align="center" style="display:flex; flex-wrap:wrap; justify-content:center;">
-<div style='width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;'>
-    <a href='https://github.com/nelvko/clash-for-linux-install' target='_blank' style='text-decoration:none; color:#0969da;'>
-      <h3 style='margin-top:0; font-size:16px;'>nelvko/clash-for-linux-install</h3>
-    </a>
-    <p style='color:#555; font-size:13px; min-height:40px;'>😼 优雅地使用基于 clash/mihomo 的代理环境</p>
-    <p style='font-size:12px; color:#888;'>⭐ 4884</p>
-  </div>
-<div style='width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;'>
-    <a href='https://github.com/yht0511/Terminus' target='_blank' style='text-decoration:none; color:#0969da;'>
-      <h3 style='margin-top:0; font-size:16px;'>yht0511/Terminus</h3>
-    </a>
-    <p style='color:#555; font-size:13px; min-height:40px;'>小学期游戏</p>
-    <p style='font-size:12px; color:#888;'>⭐ 1</p>
-  </div>
-<div style='width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;'>
-    <a href='https://github.com/RyahoSolomon/BIT-basic_training_of_web_applications_developing_project' target='_blank' style='text-decoration:none; color:#0969da;'>
-      <h3 style='margin-top:0; font-size:16px;'>RyahoSolomon/BIT-basic_training_of_web_applications_developing_project</h3>
-    </a>
-    <p style='color:#555; font-size:13px; min-height:40px;'>[BIT/Beijing Institute of Technology/北京理工大学]互联网应用开发基础训练(实践周)结课项目by关东组2024</p>
-    <p style='font-size:12px; color:#888;'>⭐ 3</p>
-  </div>
-<div style='width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;'>
-    <a href='https://github.com/YDX-2147483647/bulletin-issues-transferred' target='_blank' style='text-decoration:none; color:#0969da;'>
-      <h3 style='margin-top:0; font-size:16px;'>YDX-2147483647/bulletin-issues-transferred</h3>
-    </a>
-    <p style='color:#555; font-size:13px; min-height:40px;'>汇总 BIT 各种网站的通知。（以及钉钉、RSS插件等）</p>
-    <p style='font-size:12px; color:#888;'>⭐ 32</p>
-  </div>
-<div style='width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;'>
-    <a href='https://github.com/QQBackup/ntdb-plaintext-extracter' target='_blank' style='text-decoration:none; color:#0969da;'>
-      <h3 style='margin-top:0; font-size:16px;'>QQBackup/ntdb-plaintext-extracter</h3>
-    </a>
-    <p style='color:#555; font-size:13px; min-height:40px;'>提取QQ NT数据库 group_msg_table 中的纯文本</p>
-    <p style='font-size:12px; color:#888;'>⭐ 8</p>
-  </div>
-<div style='width:280px; margin:10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); padding:15px; background:#fff; text-align:left; transition:transform 0.2s; display:inline-block; vertical-align:top; overflow:hidden;'>
-    <a href='https://github.com/QQBackup/QQDecrypt' target='_blank' style='text-decoration:none; color:#0969da;'>
-      <h3 style='margin-top:0; font-size:16px;'>QQBackup/QQDecrypt</h3>
-    </a>
-    <p style='color:#555; font-size:13px; min-height:40px;'>解密并导出 PCQQ / QQ NT 等软件的聊天记录数据库的教程网站</p>
-    <p style='font-size:12px; color:#888;'>⭐ 121</p>
-  </div>
-</div>
+|  |  |  |
+|:--:|:--:|:--:|
+| [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install)<br><sub>😼 优雅地使用基于 clash/mihomo 的代理环境</sub><br>⭐ 4885 | [yht0511/Terminus](https://github.com/yht0511/Terminus)<br><sub>小学期游戏</sub><br>⭐ 1 | [RyahoSolomon/BIT-basic_training_of_web_applications_developing_project](https://github.com/RyahoSolomon/BIT-basic_training_of_web_applications_developing_project)<br><sub>[BIT/Beijing Institute of Technology/北京理工大学]互联网应用开发基础训练(实践周)结课项目by关东组2024</sub><br>⭐ 3 |
+| [YDX-2147483647/bulletin-issues-transferred](https://github.com/YDX-2147483647/bulletin-issues-transferred)<br><sub>汇总 BIT 各种网站的通知。（以及钉钉、RSS插件等）</sub><br>⭐ 32 | [QQBackup/ntdb-plaintext-extracter](https://github.com/QQBackup/ntdb-plaintext-extracter)<br><sub>提取QQ NT数据库 group_msg_table 中的纯文本</sub><br>⭐ 8 | [QQBackup/QQDecrypt](https://github.com/QQBackup/QQDecrypt)<br><sub>解密并导出 PCQQ / QQ NT 等软件的聊天记录数据库的教程网站</sub><br>⭐ 121 |
 <!-- STAR_SHOWCASE_END -->
 
 
