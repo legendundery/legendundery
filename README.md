@@ -13,7 +13,7 @@
 ### 🧠 About Me
 > _“If it looks like magic, it’s probably just a stack overflow post.”_
 
-✅ this is a 蒟蒻  
+✅ this is a 蒟蒻(runoob)  
 💡 **Full-stack tinkerer** — exploring AI, creative coding, and weird projects.  
 🛠️ Loves building things that are half genius, half accident.  
 🎨 Balancing between design and development.  
