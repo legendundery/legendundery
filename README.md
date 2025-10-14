@@ -77,6 +77,7 @@
 | 🌍 Site | Description |
 |---------|--------------|
 | [My Personal Site](#) | Experiments, art, and random code |
+| [BITnp](https://github.com/BITNP) | welcome to follow the **NetPioneer Association**! |
 | [Dev.to](https://dev.to/legendundery) | Technical blogs & snippets |
 
 | 🌍 friends' links | Description |
