@@ -52,7 +52,7 @@
 
 |  |  |  |
 |:--:|:--:|:--:|
-| [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install)<br><sub>😼 优雅地使用基于 clash/mihomo 的代理环境</sub><br>⭐ 4919 | [yht0511/Terminus](https://github.com/yht0511/Terminus)<br><sub>小学期游戏</sub><br>⭐ 1 | [RyahoSolomon/BIT-basic_training_of_web_applications_developing_project](https://github.com/RyahoSolomon/BIT-basic_training_of_web_applications_developing_project)<br><sub>[BIT/Beijing Institute of Technology/北京理工大学]互联网应用开发基础训练(实践周)结课项目by关东组2024</sub><br>⭐ 3 |
+| [nelvko/clash-for-linux-install](https://github.com/nelvko/clash-for-linux-install)<br><sub>😼 优雅地使用基于 clash/mihomo 的代理环境</sub><br>⭐ 4946 | [yht0511/Terminus](https://github.com/yht0511/Terminus)<br><sub>小学期游戏</sub><br>⭐ 1 | [RyahoSolomon/BIT-basic_training_of_web_applications_developing_project](https://github.com/RyahoSolomon/BIT-basic_training_of_web_applications_developing_project)<br><sub>[BIT/Beijing Institute of Technology/北京理工大学]互联网应用开发基础训练(实践周)结课项目by关东组2024</sub><br>⭐ 3 |
 | [YDX-2147483647/bulletin-issues-transferred](https://github.com/YDX-2147483647/bulletin-issues-transferred)<br><sub>汇总 BIT 各种网站的通知。（以及钉钉、RSS插件等）</sub><br>⭐ 32 | [QQBackup/ntdb-plaintext-extracter](https://github.com/QQBackup/ntdb-plaintext-extracter)<br><sub>提取QQ NT数据库 group_msg_table 中的纯文本</sub><br>⭐ 8 | [QQBackup/QQDecrypt](https://github.com/QQBackup/QQDecrypt)<br><sub>解密并导出 PCQQ / QQ NT 等软件的聊天记录数据库的教程网站</sub><br>⭐ 122 |
 <!-- STAR_SHOWCASE_END -->
 
